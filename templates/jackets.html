@@ -1,0 +1,16 @@
+{%  extends 'base.html' %}
+
+{% block title %}Jackets{% endblock %}
+
+{% block content %}
+    <h1>Куртки</h1>
+    <div class="jackets">
+        {% for jacket in jackets%}
+        <div class="jacket">
+            <h3>{{jacket.title}}</h3>
+            <p>{{jacket.description}}</p>
+            <br><br><br>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}

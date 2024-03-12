@@ -1,0 +1,16 @@
+{%  extends 'base.html' %}
+
+{% block title %}Shoes{% endblock %}
+
+{% block content %}
+    <h1>Одежда</h1>
+    <div class="shoes">
+        {% for shoe in shoes%}
+            <div class="shoe">
+                <h3>{{shoe.title}}</h3>
+                <p>{{shoe.description}}</p>
+                <br><br><br>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}
